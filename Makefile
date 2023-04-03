@@ -1,4 +1,4 @@
-FORCE_REBUILD ?= 1
+FORCE_REBUILD ?= 0
 JITSI_RELEASE ?= stable
 JITSI_BUILD ?= unstable
 JITSI_REPO ?= etav
