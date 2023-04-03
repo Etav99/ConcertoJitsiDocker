@@ -1,7 +1,8 @@
-FORCE_REBUILD ?= 0
+FORCE_REBUILD ?= 1
 JITSI_RELEASE ?= stable
 JITSI_BUILD ?= unstable
-JITSI_REPO ?= jitsi
+JITSI_REPO ?= etav
+BASE_JITSI_REPO ?= jitsi
 NATIVE_ARCH ?= $(shell uname -m)
 
 JITSI_SERVICES := base base-java web prosody jicofo jvb jigasi jibri
