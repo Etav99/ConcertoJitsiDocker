@@ -1,8 +1,9 @@
 FORCE_REBUILD ?= 0
-JITSI_RELEASE ?= stable
-JITSI_BUILD ?= unstable
+JITSI_RELEASE ?= stable-8319-concerto-2.0
+JITSI_BUILD ?= latest
 JITSI_REPO ?= etav
 BASE_JITSI_REPO ?= jitsi
+BASE_JITSI_TAG ?= stable-8319
 NATIVE_ARCH ?= $(shell uname -m)
 
 JITSI_SERVICES := base base-java web prosody jicofo jvb jigasi jibri
@@ -35,7 +36,7 @@ buildx:
 	docker buildx build \
 		--platform linux/amd64,linux/arm64 \
 		--progress=plain \
-		$(BUILD_ARGS) --build-arg BASE_TAG=$(JITSI_BUILD) \
+		$(BUILD_ARGS) --build-arg BASE_TAG=$(BASE_JITSI_TAG) \
 		--pull --push \
 		--tag $(JITSI_REPO)/$(JITSI_SERVICE):$(JITSI_BUILD) \
 		--tag $(JITSI_REPO)/$(JITSI_SERVICE):$(JITSI_RELEASE) \

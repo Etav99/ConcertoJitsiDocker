@@ -1,6 +1,7 @@
 ARG JITSI_REPO=jitsi
-ARG BASE_TAG=latest
-FROM ${JITSI_REPO}/base-java:${BASE_TAG}
+ARG BASE_JITSI_REPO=jitsi
+ARG BASE_TAG=stable
+FROM ${BASE_JITSI_REPO}/base-java:${BASE_TAG}
 
 LABEL org.opencontainers.image.title="Jitsi Videobridge (jvb)"
 LABEL org.opencontainers.image.description="WebRTC compatible server designed to route video streams amongst participants in a conference."

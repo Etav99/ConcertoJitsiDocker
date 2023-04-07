@@ -1,6 +1,6 @@
 ARG JITSI_REPO=jitsi
 ARG BASE_JITSI_REPO=jitsi
-ARG BASE_TAG=stable-8319
+ARG BASE_TAG=stable
 FROM ${BASE_JITSI_REPO}/base-java:${BASE_TAG}
 
 LABEL org.opencontainers.image.title="Jitsi Broadcasting Infrastructure (jibri)"
