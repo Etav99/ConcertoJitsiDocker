@@ -110,3 +110,16 @@ cp /defaults/interface_config.js /config/interface_config.js
 if [[ -f /config/custom-interface_config.js ]]; then
     cat /config/custom-interface_config.js >> /config/interface_config.js
 fi
+
+
+function set_interface_config() {
+  local PARAM=$1
+  local VALUE=$2
+  
+  echo "interface_config.js: Setting $PARAM to $VALUE"
+
+  perl -i -pe "s/(\s*)\/?\/? *?($PARAM):.*?,/\$1\$2: $VALUE,/g" /config/interface_config.js
+}
+
+set_interface_config DISABLE_JOIN_LEAVE_NOTIFICATIONS true
+

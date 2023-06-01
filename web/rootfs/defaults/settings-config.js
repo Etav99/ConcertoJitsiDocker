@@ -478,3 +478,7 @@ config.e2eping.maxMessagePerSecond = {{ .Env.E2EPING_MAX_MESSAGE_PER_SECOND }};
 if (!config.hasOwnProperty('whiteboard')) config.whiteboard = {};
 config.whiteboard.enabled = {{ $WHITEBOARD_ENABLED }};
 config.whiteboard.collabServerBaseUrl = '{{ $WHITEBOARD_COLLAB_SERVER_PUBLIC_URL }}';
+
+
+// Concerto overwrites
+config.disableModeratorIndicator = false;

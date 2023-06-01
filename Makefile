@@ -1,9 +1,9 @@
 FORCE_REBUILD ?= 0
-JITSI_RELEASE ?= stable-8319-concerto-2.0
+JITSI_RELEASE ?= stable-8615-concerto-2.1
 JITSI_BUILD ?= latest
 JITSI_REPO ?= etav
 BASE_JITSI_REPO ?= jitsi
-BASE_JITSI_TAG ?= stable-8319
+BASE_JITSI_TAG ?= stable-8615
 NATIVE_ARCH ?= $(shell uname -m)
 
 JITSI_SERVICES := base base-java web prosody jicofo jvb jigasi jibri
