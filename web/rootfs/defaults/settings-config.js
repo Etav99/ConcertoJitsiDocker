@@ -481,4 +481,4 @@ config.whiteboard.collabServerBaseUrl = '{{ $WHITEBOARD_COLLAB_SERVER_PUBLIC_URL
 
 
 // Concerto overwrites
-config.disableModeratorIndicator = false;
+config.disableModeratorIndicator = true;
