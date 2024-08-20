@@ -11,7 +11,7 @@ echo $request
   curl --retry-connrefused --retry 10000 -s -w "\\n FinishRecording webhook result\\nResponse code: %{http_code}\\nSend to: %{url_effective}\\nMeeting ID: $meeting_name\\n\\n" -X POST \
     -H "Content-Type: application/json" \
     -d "$request" \
-    http://concerto_server/Storage/RecordingFinished
+    http://concerto_server/Session/RecordingFinished
 ) & disown
 
 echo "Finalize script for $meeting_name finished"
