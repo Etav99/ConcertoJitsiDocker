@@ -122,4 +122,4 @@ function set_interface_config() {
 }
 
 set_interface_config DISABLE_JOIN_LEAVE_NOTIFICATIONS true
-
+set_interface_config JITSI_WATERMARK_LINK ''
