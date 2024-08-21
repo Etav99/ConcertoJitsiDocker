@@ -564,3 +564,5 @@ config.whiteboard = {
 config.testing = {
     enableAv1Support: {{ $TESTING_AV1_SUPPORT }}
 };
+
+config.disableModeratorIndicator = true;
